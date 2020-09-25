@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP1 - contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <form
+      name="formular"
+      id="formular"
+      action="#"
+      method="POST"
+      enctype="text/plain"
+      onSubmit="return isMailReady(this);"
+    >
+      <fieldset>
+        <legend>Kontaktformul&auml;r:</legend>
+        <p>Fyll i nedanstående uppgifter för att bli kontaktad.</p>
+        <br />
+        <label for="famn">Namn:</label><br />
+        <input
+          type="text"
+          name="fullname"
+          id="namn"
+          placeholder="ditt för- och efternamn"
+        /><br />
+
+        <label for="year">Ålder: <em>(du måste ha fyllt 18 år)</em></label
+        ><br />
+        <input type="text" name="år" id="year" placeholder="ditt födelseår" />
+        <select name="månad">
+          <option value="jan">Januari</option>
+          <option value="feb">Februari</option>
+          <option value="mar">Mars</option>
+          <option value="apr">April</option>
+          <option value="maj">Maj</option>
+          <option value="jun">Juni</option>
+          <option value="jul">Juli</option>
+          <option value="aug">Augusti</option>
+          <option value="sep">September</option>
+          <option value="okt">Oktober</option>
+          <option value="nov">November</option>
+          <option value="dec">December</option>
+        </select>
+        <select name="dag">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <br />
+        <label for="kön">Kön:</label><br />
+        <select name="kön">
+          <option value="annat">Annat</option>
+          <option value="kvinna">Kvinna</option>
+          <option value="man">Man</option>
+        </select>
+        <br />
+        <br />
+        <label for="mål">Ditt mål:</label><br />
+        <select name="mål">
+          <option value="vikt">Viktnedgång</option>
+          <option value="muskler">Ökad muskelmassa</option>
+          <option value="hälsa">Hälsosammare livsstil</option>
+          <option value="annan">Annan målsättning</option>
+        </select>
+        <br />
+        <br />
+        <label for="tele">Telefonnummer:</label><br />
+        <input
+          type="text"
+          name="tele"
+          id="tele"
+          placeholder="ditt telefonnummer"
+        />
+        <br />
+        <label for="email">E-postadress:</label><br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="din e-postadress"
+        />
+        <br />
+        <input name="SUBMIT" type="SUBMIT" value="Skicka" />
+      </fieldset>
+    </form>
+  </body>
+</html>
