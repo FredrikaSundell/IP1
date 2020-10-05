@@ -14,6 +14,7 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+/* HEADER */
 header {
   background-color: rgb(43, 43, 43);
   padding: 20px;
@@ -30,11 +31,10 @@ header h1 {
 }
 
 /* NAV BAR */
-
 .topnav {
   border: 2px solid rgb(223, 223, 223);
   background: rgb(209, 236, 234);
-  padding: 20px;
+  padding: 5px;
 }
 
 .topnav ul {
@@ -51,8 +51,8 @@ header h1 {
 .topnav li .current {
   background: rgba(141, 216, 210);
   border: 5px inset rgb(88, 170, 163);
-  border-radius: 5px;
-  padding: 10px 15px;
+  border-radius: 4px;
+  padding: 5px 15px;
 }
 
 .topnav li a {
@@ -69,7 +69,34 @@ header h1 {
   text-shadow: 1px 1px gray;
 }
 
-/* NAV BAR */
+/* IMG */
+.imgBox {
+  background-color: white;
+  margin: 0;
+  text-align: center;
+}
+.imgBox li {
+  width: 30%;
+  display: inline-block;
+}
+.imgBox img {
+  width: 100%;
+  padding: 5%;
+}
+
+/* INFO */
+.info {
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+  max-width: 800px;
+  background: white;
+  color: black;
+  font-size: 25px;
+  transition: 1s;
+  padding: 10px;
+  text-align: center;
+}
 
 /* SOC LINKS */
 .social-links {
@@ -91,8 +118,6 @@ header h1 {
 footer {
   display: inline-block;
   position: relative;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background: rgb(43, 43, 43);
   color: #ffffff;
@@ -110,11 +135,12 @@ footer {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: whitesmoke;
+  margin: 2%;
 }
 
 input[type='text'],
 input[type='email'] {
-  width: 50%;
+  /*width: 50%;*/
   padding: 0px 5px 0px 10px;
   margin: 5px 0 15px 0;
   background-color: rgb(24, 24, 24);
@@ -133,7 +159,6 @@ select {
 }
 
 input[type='submit'] {
-  /* width: 100%; */
   background-color: rgb(255, 204, 128);
   color: rgba(255, 255, 255, 1);
   padding: 15px 20px;
@@ -156,6 +181,9 @@ input[type='submit'] {
     font-size: 11px;
   }
 
+  .info {
+    font-size: 20px;
+  }
   .topnav ul {
     flex-direction: column;
   }
