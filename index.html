@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PT - Kurt Karlsson</title>
+    <title>Kurt Karlsson PT</title>
     <meta
       name="description="
       content="Enkelhet, Kontinuitet och Hållbarhet är mina nyckelord inom träning. Mitt mål är att hjälpa dig med att uppfylla dina uppsatta mål och drömmar."
@@ -29,31 +29,138 @@
       </ul>
     </nav>
 
-    <div class="imgBox">
-      <ul>
-        <li>
-          <img src="vikt.jpg" alt="Bild på våg" />
-        </li>
-        <li>
-          <img src="muskler.jpg" alt="Bild på hantel" />
-        </li>
-        <li>
-          <img src="sko.jpg" alt="Bild på löpsko" />
-        </li>
-      </ul>
+    <div class="container">
+      <img class="workout" src="workout.jpg" alt="workout" />
     </div>
 
-    <h2 class="info">
-      Alla är unika, och har sina specifika styrkor och gränser. Jag utformar en
-      anpassad plan som grundar sig på din hälsa, ditt schema, och viktigast av
-      allt, dina fitnessmål. Tillsammans väljer vi ett upplägg som passar dig
-      med kostupplägg, online-träning och/eller personlig tränare
-    </h2>
+    <main>
+      <h2>
+        Boka in din kostnadsfria introduktion med mig som personlig tränare och
+        få svar på funderingar som du har om din träning. Du får förslag på hur
+        du kan lägga upp din träning för att nå dina träningsmål. Jag möter
+        många nya kunder som vill komma igång med bra träningsvanor och nå sina
+        träningsmål. Jag vet hur viktigt det är att ha en plan för sin träning
+        och ger därför alla nya kunder en kostnadsfri introduktion. Ta chansen
+        att kickstarta din träning!
+      </h2>
+    </main>
+    <a name="ankareForm"></a>
+    <form
+      name="formular"
+      id="formular"
+      action="#"
+      method="POST"
+      enctype="text/plain"
+      onSubmit="return isMailReady(this);"
+    >
+      <fieldset>
+        <legend>För att boka kostnadsfri introduktion:</legend>
+        <p>
+          Fyll i nedanstående uppgifter som ett första steg på en kostnadsfria
+          introduktionen. Glöm ej välja om ditt mål är viktnedgång, ökad
+          muskelmassa, hälsosammare livsstil eller annat mål.
+        </p>
+        <br />
+        <label for="fullname">Namn:</label><br />
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="ditt för- och efternamn"
+        /><br />
+
+        <label for="year">Ålder: <em>(du måste ha fyllt 18 år)</em></label
+        ><br />
+        <input type="text" name="år" id="year" placeholder="ditt födelseår" />
+        <select name="månad">
+          <option value="jan">Januari</option>
+          <option value="feb">Februari</option>
+          <option value="mar">Mars</option>
+          <option value="apr">April</option>
+          <option value="maj">Maj</option>
+          <option value="jun">Juni</option>
+          <option value="jul">Juli</option>
+          <option value="aug">Augusti</option>
+          <option value="sep">September</option>
+          <option value="okt">Oktober</option>
+          <option value="nov">November</option>
+          <option value="dec">December</option>
+        </select>
+        <select name="dag">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <br />
+        <label for="gender">Kön:</label><br />
+        <select id="gender" name="kön">
+          <option value="man">Man</option>
+          <option value="kvinna">Kvinna</option>
+          <option value="Annat">Annat</option>
+        </select>
+        <br />
+        <br />
+        <label for="goal">Ditt mål:</label><br />
+        <select id="goal" name="mål">
+          <option value="vikt">Viktnedgång</option>
+          <option value="muskler">Ökad muskelmassa</option>
+          <option value="hälsa">Hälsosammare livsstil</option>
+          <option value="annan">Annan målsättning</option>
+        </select>
+        <br />
+        <br />
+        <label for="tele">Telefonnummer:</label><br />
+        <input
+          type="text"
+          name="tele"
+          id="tele"
+          placeholder="ditt telefonnummer"
+        />
+        <br />
+        <label for="email">E-postadress:</label><br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="din e-postadress"
+        />
+        <br />
+        <input name="SUBMIT" type="SUBMIT" value="Skicka" />
+      </fieldset>
+    </form>
 
     <div class="social-links">
       <ul>
         <li>
-          <a href="https://www.facebook.com/"
+          <a href="https://www.facebook.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/04/facebook-2935402_1280.png"
               alt="länk till facebook"
@@ -61,7 +168,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/"
+          <a href="https://www.instagram.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/04/instagram-2935404_1280.png"
               alt="länk till instagram"
@@ -69,7 +176,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.twitter.com/"
+          <a href="https://www.twitter.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/05/twitter-2935414_1280.png"
               alt="länk till twitter"
@@ -77,7 +184,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.whatsapp.com/"
+          <a href="https://www.whatsapp.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/05/whatsapp-2935415_1280.png"
               alt="länk till whatsapp"
@@ -85,7 +192,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/"
+          <a href="https://www.youtube.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/05/youtube-2935416_1280.png"
               alt="länk till youtube"
