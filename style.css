@@ -1,3 +1,7 @@
+:root {
+  --color1: #022437;
+  --color2: #80d0c7;
+}
 * {
   box-sizing: border-box;
 }
@@ -16,7 +20,13 @@ p {
 
 /* HEADER */
 header {
-  background-color: rgb(43, 43, 43);
+  background-color: var(--color1);
+  background-image: linear-gradient(
+    71deg,
+    var(--color1) 0%,
+    var(--color2) 100%
+  );
+
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -82,6 +92,12 @@ header h1 {
   animation: clipPath 3s infinite;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .workout {
+    animation: none;
+  }
+}
+
 @keyframes clipPath {
   0% {
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
@@ -98,6 +114,7 @@ header h1 {
 .imgBox {
   background-color: white;
   margin: 0;
+  margin-bottom: 1%;
   text-align: center;
 }
 .imgBox li {
@@ -107,10 +124,16 @@ header h1 {
 .imgBox img {
   width: 100%;
   padding: 5%;
+  transition: 0.7s;
+  box-shadow: 7px 7px 3px grey;
+}
+.imgBox img:hover {
+  transition: 0.7s;
+  box-shadow: 7px 7px 3px rgb(214, 181, 132);
 }
 
 /* INFO */
-main {
+main h2 {
   max-width: 800px;
   background: white;
   color: black;
@@ -141,7 +164,12 @@ footer {
   display: inline-block;
   position: relative;
   width: 100%;
-  background: rgb(43, 43, 43);
+  background-color: var(--color2);
+  background-image: linear-gradient(
+    71deg,
+    var(--color2) 0%,
+    var(--color1) 100%
+  );
   color: #ffffff;
   padding: 10px;
   text-align: center;
@@ -200,7 +228,7 @@ input[type='submit'] {
 
 /* On smaller screens, decrease text size and nav */
 @media only screen and (max-width: 650px) {
-  p {
+  fieldset {
     font-size: 11px;
   }
 

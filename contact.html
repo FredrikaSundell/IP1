@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Kurt Karlsson PT</title>
+    <title>Kontakt | Kurt Karlsson PT</title>
+    <meta
+      name="description="
+      content="Har du några frågor eller önskar att bli kontaktad? Jag återkopplar inom 48 timmar."
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap"
@@ -24,47 +28,31 @@
         <li><a href="contact.html" class="current">Kontakt</a></li>
       </ul>
     </nav>
-
     <div class="imgBox">
       <ul>
         <li>
           <a href="index.html#ankareForm">
-            <img
-              src="vikt.jpg"
-              alt="Bild på våg"
-              title="länk till kontaktformulär"
-            />
+            <img src="vikt.jpg" alt="Våg" title="länk till kontaktformulär" />
           </a>
         </li>
         <li>
           <a href="index.html#ankareForm">
             <img
               src="muskler.jpg"
-              alt="Bild på hantel"
+              alt="Hantel"
               title="länk till kontaktformulär"
             />
           </a>
         </li>
         <li>
           <a href="index.html#ankareForm">
-            <img
-              src="sko.jpg"
-              alt="Bild på löpsko"
-              title="länk till kontaktformulär"
-            />
+            <img src="sko.jpg" alt="Löpsko" title="länk till kontaktformulär" />
           </a>
         </li>
       </ul>
     </div>
 
-    <form
-      name="formular"
-      id="formular"
-      action="#"
-      method="POST"
-      enctype="text/plain"
-      onSubmit="return isMailReady(this);"
-    >
+    <form name="formular" id="formular" onSubmit="return isMailReady(this);">
       <fieldset>
         <legend>Kontaktformul&auml;r:</legend>
         <p>Fyll i nedanstående uppgifter för att bli kontaktad.</p>
@@ -75,13 +63,6 @@
           name="fullname"
           id="fullname"
           placeholder="ditt för- och efternamn"
-        /><br />
-        <label for="tele">Telefonnummer:</label><br />
-        <input
-          type="text"
-          name="tele"
-          id="tele"
-          placeholder="ditt telefonnummer"
         />
         <br />
         <label for="email">E-postadress:</label><br />
@@ -90,6 +71,14 @@
           name="email"
           id="email"
           placeholder="din e-postadress"
+        />
+        <br />
+        <label for="tele">Telefonnummer:</label><br />
+        <input
+          type="text"
+          name="tele"
+          id="tele"
+          placeholder="ditt telefonnummer"
         />
         <br />
         <input name="SUBMIT" type="SUBMIT" value="Skicka" />
@@ -101,7 +90,7 @@
           <a href="https://www.facebook.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/04/facebook-2935402_1280.png"
-              alt="länk till facebook"
+              alt="facebook logotyp"
             />
           </a>
         </li>
@@ -109,7 +98,7 @@
           <a href="https://www.instagram.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/04/instagram-2935404_1280.png"
-              alt="länk till instagram"
+              alt="instagram logotyp"
             />
           </a>
         </li>
@@ -117,7 +106,7 @@
           <a href="https://www.twitter.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/05/twitter-2935414_1280.png"
-              alt="länk till twitter"
+              alt="twitter logotyp"
             />
           </a>
         </li>
@@ -125,7 +114,7 @@
           <a href="https://www.whatsapp.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/05/whatsapp-2935415_1280.png"
-              alt="länk till whatsapp"
+              alt="whatsapp logotyp"
             />
           </a>
         </li>
@@ -133,7 +122,7 @@
           <a href="https://www.youtube.com/" target="_blank"
             ><img
               src="https://cdn.pixabay.com/photo/2017/11/10/05/05/youtube-2935416_1280.png"
-              alt="länk till youtube"
+              alt="youtube logotyp"
             />
           </a>
         </li>
@@ -141,7 +130,7 @@
     </div>
 
     <footer>
-      <p class="copyright">Copyright 2020 Kurt Karlsson - PT</p>
+      <p class="copyright">© 2020 Kurt Karlsson - PT</p>
     </footer>
   </body>
 </html>
